@@ -1,6 +1,53 @@
 {
-  "name": "@daddia/deck",
-  "version": "0.0.1",
-  "private": true,
-  "license": "MIT"
+  "name": "deck-core",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "description": "Create beautiful presentations with Next.js and MDX",
+  "keywords": [
+    "Presentations",
+    "NextJs",
+    "MDX",
+    "Slides",
+    "React"
+  ],
+  "homepage": "https://deck.app",
+  "repository": "github:daddia/deck",
+  "author": "daddia",
+  "exports": {
+    "./client": {
+      "import": "./dist/client/index.js",
+      "types": "./dist/client/index.d.ts"
+    },
+    "./server": {
+      "import": "./dist/server/index.js",
+      "types": "./dist/server/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c --watch",
+    "clean": "rm -rf dist",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint .",
+    "types:check": "tsc --noEmit"
+  },
+
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/tailwind-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "^19.1.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.24.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "5.8.2"
+  },
+  "peerDependencies": {
+    "react": "^19"
+  }
 }
