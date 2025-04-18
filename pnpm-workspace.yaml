@@ -1,0 +1,8 @@
+packages:
+  - apps/*
+  - packages/*
+  - packages-internal/*
+  - '!**/__tests__/**'
+
+onlyBuiltDependencies:
+  - sharp
