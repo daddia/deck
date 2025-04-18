@@ -1,18 +1,20 @@
 {
-  "name": "web",
-  "version": "1.0.0",
+  "name": "deck-site",
+  "version": "0.1.0",
   "type": "module",
   "private": true,
+  "description": "Public facing website for deck.",
   "scripts": {
-    "dev": "next dev --port 3000 --turbopack",
     "build": "next build",
+    "dev": "next dev --port 3000 --turbopack",
+    "index-docs": "tsx ./scripts/sync-algolia.mjs",
     "start": "next start",
     "lint": "next lint --max-warnings 0",
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
     "next": "^15.3.0",
+    "next-themes": "^0.4.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
