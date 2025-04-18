@@ -36,7 +36,9 @@
     "types:check": "tsc --noEmit"
   },
   "dependencies": {
+    "@clack/prompts": "^0.10.1",
     "commander": "^13.1.0",
+    "execa": "^9.5.2",
     "package-manager-detector": "^1.2.0",
     "picocolors": "^1.1.1",
     "ts-morph": "^25.0.1"
@@ -45,6 +47,9 @@
     "@repo/eslint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@types/cross-spawn": "^6.0.6",
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.1.2",
     "fast-glob": "^3.3.3",
     "tsx": "^4.19.3"
   }
