@@ -23,7 +23,7 @@
   },
   "main": "./dist/index.js",
   "bin": {
-    "deck": "./dist/index.js"
+    "deck": "./bin/deck.js"
   },
   "files": [
     "dist/*"
@@ -47,10 +47,17 @@
     "@repo/eslint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/cross-spawn": "^6.0.6",
     "@types/node": "^22.14.1",
     "@types/react": "^19.1.2",
     "fast-glob": "^3.3.3",
+    "rollup": "^4.9.6",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-terser": "^7.0.2",
     "tsx": "^4.19.3"
   }
 }
