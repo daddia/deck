@@ -1,0 +1,75 @@
+name: Pull Request
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'packages/**'
+      - 'packages-internal/**'
+      - 'apps/**'
+
+jobs:
+  check-changesets:
+    name: Check Changesets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v3
+        with:
+          version: 10.8.0
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Check for changeset
+        run: |
+          # Get changed files between PR branch and main
+          CHANGED_FILES=$(git diff --name-only origin/main HEAD)
+
+          # Check if changes affect actual package code
+          CODE_CHANGES=false
+          for file in $CHANGED_FILES; do
+            if [[ $file == packages/* || $file == packages-internal/* || $file == apps/* ]]; then
+              # Ignore test files, docs, and configs
+              if [[ ! $file =~ \.(test|spec|md|mdx)$ && ! $file =~ (config|jest|eslint) ]]; then
+                CODE_CHANGES=true
+                break
+              fi
+            fi
+          done
+
+          # If code was changed, check for a changeset
+          if [[ "$CODE_CHANGES" == "true" ]]; then
+            if ! echo "$CHANGED_FILES" | grep -q "\.changeset/"; then
+              echo "Code changes detected but no changeset found."
+              echo "Please run 'pnpm changeset' to create a changeset."
+              exit 1
+            fi
+          else
+            echo "No significant code changes detected. Changeset not required."
+          fi
