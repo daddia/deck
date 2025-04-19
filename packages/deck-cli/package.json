@@ -1,7 +1,7 @@
 {
   "name": "@deck/cli",
   "version": "0.1.0",
-  "description": "CLI tool for deck",
+  "description": "CLI tool for deck.",
   "keywords": [
     "CLI",
     "Presentations",

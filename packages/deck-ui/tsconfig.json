@@ -1,5 +1,12 @@
 {
   "extends": "@repo/typescript-config/react-library.json",
-  "include": ["src"],
-  "exclude": ["dist", "build", "node_modules"]
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "tsc-alias": {
+    "resolveFullPaths": true
+  },
+  "exclude": ["node_modules", "dist", "eslint.config.mjs"]
 }
