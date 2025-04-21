@@ -1,0 +1,33 @@
+{
+  "name": "example-openapi",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "build:docs": "node ./scripts/generate-docs.mjs",
+    "dev": "next dev",
+    "start": "next start",
+    "types:check": "deck-mdx && tsc --noEmit"
+  },
+  "dependencies": {
+    "@scalar/api-client-react": "^1.2.22",
+    "deck-core": "workspace:*",
+    "deck-mdx": "workspace:*",
+    "deck-openapi": "workspace:*",
+    "deck-ui": "workspace:*",
+    "next": "15.3.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "shiki": "^3.2.2",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.4",
+    "@types/mdx": "^2.0.13",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.8.3"
+  }
+}

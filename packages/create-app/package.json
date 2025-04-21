@@ -1,0 +1,51 @@
+{
+  "name": "create-deck-app",
+  "version": "0.1.0",
+  "description": "Create a new presentation site with deck",
+  "keywords": [
+    "deck",
+    "presentation",
+    "slides",
+    "slideshow",
+    "NextJs"
+  ],
+  "homepage": "https://deck.daddia.com",
+  "repository": "github:daddia/deck",
+  "license": "MIT",
+  "author": "daddia",
+  "type": "module",
+  "bin": "./dist/index.js",
+  "module": "./dist/create-app.js",
+  "types": "./dist/create-app.d.ts",
+  "files": [
+    "template/*",
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint .",
+    "postpublish": "echo \"Updating template repo\" && bash ./scripts/update-git-repo.sh",
+    "types:check": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "reset": "rm -rf dist node_modules .turbo"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.10.1",
+    "cross-spawn": "^7.0.6",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.6",
+    "@types/node": "22.14.1",
+    "eslint-config-custom": "workspace:*",
+    "fast-glob": "^3.3.3",
+    "tsconfig": "workspace:*"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

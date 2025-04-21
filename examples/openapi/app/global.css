@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+@import 'deck-ui/css/neutral.css';
+@import 'deck-ui/css/preset.css';
+
+@source '../node_modules/deck-openapi/dist/**/*.js';
+
+:root {
+  --fd-layout-width: 1400px;
+}

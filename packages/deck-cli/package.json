@@ -1,0 +1,59 @@
+{
+  "name": "@deck/cli",
+  "version": "0.1.0",
+  "description": "The CLI tool for deck",
+  "keywords": [
+    "deck",
+    "presentation",
+    "slides",
+    "slideshow",
+    "NextJs"
+  ],
+  "homepage": "https://deck.daddia.com",
+  "repository": "github:daddia/deck",
+  "license": "MIT",
+  "author": "daddia",
+  "type": "module",
+  "exports": {
+    "./build": {
+      "import": "./dist/build/index.js",
+      "types": "./dist/build/index.d.ts"
+    }
+  },
+  "main": "./dist/index.js",
+  "bin": {
+    "deck": "./dist/index.js"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint .",
+    "sync": "tsx ./scripts/sync.ts",
+    "types:check": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "reset": "rm -rf dist node_modules .turbo"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.10.1",
+    "commander": "^13.1.0",
+    "execa": "^9.5.2",
+    "package-manager-detector": "^1.2.0",
+    "picocolors": "^1.1.1",
+    "ts-morph": "^25.0.1"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.6",
+    "@types/node": "22.14.1",
+    "@types/react": "^19.1.2",
+    "eslint-config-custom": "workspace:*",
+    "fast-glob": "^3.3.3",
+    "tsconfig": "workspace:*",
+    "tsx": "^4.19.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

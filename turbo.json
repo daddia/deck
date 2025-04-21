@@ -1,0 +1,37 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "stream",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [
+        ".output",
+        ".contentlayer/**",
+        ".source/**",
+        "!.contentlayer/.cache/**",
+        ".next/**",
+        "content/openapi/**",
+        "!.next/cache/**",
+        "dist/**",
+        "out",
+        "build",
+        ".vercel"
+      ]
+    },
+    "lint": {},
+    "types:check": {
+      "dependsOn": [],
+      "outputs": []
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "clean": {
+      "cache": false
+    },
+    "reset": {
+      "cache": false
+    }
+  }
+}

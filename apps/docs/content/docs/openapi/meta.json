@@ -1,0 +1,6 @@
+{
+  "title": "OpenAPI Example",
+  "description": "A demo for deck OpenAPI",
+  "root": true,
+  "icon": "Rocket"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@repo/tailwind-config",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./tailwind.config": "./tailwind.config.ts",
+    "./postcss.config": "./postcss.config.js"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "reset": "rm -rf dist node_modules .turbo"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.4"
+  }
+}

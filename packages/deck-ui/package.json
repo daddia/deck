@@ -1,0 +1,131 @@
+{
+  "name": "deck-ui",
+  "version": "0.1.0",
+  "description": "The framework for building a documentation website in Next.js and MDX",
+  "keywords": [
+    "deck",
+    "presentation",
+    "slides",
+    "slideshow",
+    "NextJs"
+  ],
+  "homepage": "https://deck.daddia.com",
+  "repository": "github:daddia/deck",
+  "license": "MIT",
+  "author": "daddia",
+  "type": "module",
+  "exports": {
+    "./style.css": "./dist/style.css",
+    "./css/*": "./css/*",
+    "./image-zoom.css": "./dist/image-zoom.css",
+    "./components/*": {
+      "import": "./dist/components/*.js",
+      "types": "./dist/components/*.d.ts",
+      "default": "./dist/components/*.js"
+    },
+    "./i18n": {
+      "import": "./dist/i18n.js",
+      "types": "./dist/i18n.d.ts"
+    },
+    "./layouts/*": {
+      "import": "./dist/layouts/*.js",
+      "types": "./dist/layouts/*.d.ts"
+    },
+    "./page": {
+      "node": "./dist/page.server.js",
+      "import": "./dist/page.js",
+      "types": "./dist/page.server.d.ts"
+    },
+    "./provider": {
+      "import": "./dist/provider/index.js",
+      "types": "./dist/provider/index.d.ts"
+    },
+    "./provider/*": {
+      "import": "./dist/provider/*.js",
+      "types": "./dist/provider/*.d.ts"
+    },
+    "./contexts/*": {
+      "import": "./dist/contexts/*.js",
+      "types": "./dist/contexts/*.d.ts"
+    },
+    "./mdx": {
+      "node": "./dist/mdx.server.js",
+      "import": "./dist/mdx.js",
+      "types": "./dist/mdx.d.ts"
+    },
+    "./og": {
+      "import": "./dist/og.js",
+      "types": "./dist/og.d.ts"
+    },
+    "./theme/*": {
+      "import": "./dist/theme/*.js",
+      "types": "./dist/theme/*.d.ts"
+    },
+    "./utils/*": {
+      "import": "./dist/utils/*.js",
+      "types": "./dist/utils/*.d.ts"
+    }
+  },
+  "files": [
+    "dist/*",
+    "css/*"
+  ],
+  "scripts": {
+    "build": "pnpm build:layout && pnpm build:tailwind",
+    "build:layout": "tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "build:tailwind": "tailwindcss -i css/style.css -o ./dist/style.css && tailwindcss -i src/components/image-zoom.css -o dist/components/image-zoom.css",
+    "dev": "concurrently \"tsc -w --project tsconfig.build.json\" \"tsc-alias -w -p tsconfig.build.json\" \"pnpm dev:tailwind\"",
+    "dev:tailwind": "tailwindcss -i css/style.css -o ./dist/style.css -w && tailwindcss -i src/components/image-zoom.css -o dist/components/image-zoom.css -w",
+    "lint": "eslint .",
+    "types:check": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "reset": "rm -rf dist node_modules .turbo"
+  },
+  "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.4",
+    "@radix-ui/react-collapsible": "^1.1.4",
+    "@radix-ui/react-dialog": "^1.1.7",
+    "@radix-ui/react-direction": "^1.1.1",
+    "@radix-ui/react-navigation-menu": "^1.2.6",
+    "@radix-ui/react-popover": "^1.1.7",
+    "@radix-ui/react-scroll-area": "^1.2.4",
+    "@radix-ui/react-slot": "^1.2.0",
+    "@radix-ui/react-tabs": "^1.1.4",
+    "class-variance-authority": "^0.7.1",
+    "deck-core": "workspace:*",
+    "lodash.merge": "^4.6.2",
+    "lucide-react": "^0.488.0",
+    "next-themes": "^0.4.6",
+    "postcss-selector-parser": "^7.1.0",
+    "react-medium-image-zoom": "^5.2.14",
+    "tailwind-merge": "^3.2.0"
+  },
+  "devDependencies": {
+    "@deck/cli": "workspace:*",
+    "@next/eslint-plugin-next": "^15.3.1",
+    "@tailwindcss/cli": "^4.1.4",
+    "@types/lodash.merge": "^4.6.9",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "eslint-config-custom": "workspace:*",
+    "deck-core": "workspace:*",
+    "next": "15.3.1",
+    "tailwindcss": "^4.1.4",
+    "tsc-alias": "^1.8.15",
+    "tsconfig": "workspace:*"
+  },
+  "peerDependencies": {
+    "next": "14.x.x || 15.x.x",
+    "react": "18.x.x || 19.x.x",
+    "react-dom": "18.x.x || 19.x.x",
+    "tailwindcss": "^3.4.14 || ^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "tailwindcss": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
