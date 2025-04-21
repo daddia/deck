@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.DECK_GH_TOKEN }}
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -61,5 +61,5 @@ jobs:
           publish: pnpm run release
           version: pnpm run version
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.DECK_GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.DECK_NPM_TOKEN }}
