@@ -1,6 +1,0 @@
-{
-  "root": true,
-  "title": "deck CLI",
-  "description": "The CLI tool for docs automation",
-  "icon": "Terminal"
-}
