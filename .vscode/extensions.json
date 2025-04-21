@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "davidanson.vscode-markdownlint",
+    "esbenp.prettier-vscode",
+    "yoavbls.pretty-ts-errors",
+    "stylelint.vscode-stylelint",
+    "unifiedjs.vscode-mdx"
+  ]
+}
