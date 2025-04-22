@@ -1,8 +1,3 @@
-CHANGELOG.md
-pnpm-lock.yaml
-.changeset/*.md
-.github/**/*.md
-
 packages/create-app/versions.json
 
 apps/docs/shaders/*
@@ -10,7 +5,6 @@ apps/docs/shaders/*
 **/test/out/**/*
 **/test/fixtures/*.output.*
 
-out
 .content-collections
 
 apps/docs/content/docs/ui/museum/*.mdx
@@ -25,7 +19,6 @@ apps/docs/content/docs/ui/typescript.mdx
 
 packages/mdx-remote/test/fixtures/**/*.js
 packages/mdx-remote/test/fixtures/**/*.json
-build/
 
 
 # Build output
@@ -73,3 +66,7 @@ pnpm-debug.log*
 
 # .github files
 .github/
+
+# changeset files
+.changeset/
+CHANGELOG.md
