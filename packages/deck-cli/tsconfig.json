@@ -5,5 +5,5 @@
       "@/*": ["./src/*"]
     }
   },
-  "exclude": ["node_modules", "test/repo", "test/repo-2", "eslint.config.mjs"]
+  "exclude": ["node_modules", "test/repo", "eslint.config.mjs"]
 }

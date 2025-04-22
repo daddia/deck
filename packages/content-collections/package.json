@@ -41,7 +41,7 @@
     "@content-collections/core": "^0.8.2",
     "@content-collections/mdx": "^0.2.2",
     "@types/node": "22.14.1",
-    "eslint-config-custom": "workspace:*",
+    "@repo/eslint-config": "workspace:*",
     "deck-core": "workspace:*",
     "tsconfig": "workspace:*",
     "unified": "^11.0.5",

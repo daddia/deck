@@ -31,8 +31,11 @@ jobs:
       - name: Lint Format Check
         run: pnpm lint:prettier
 
+      - name: Check Build Packages
+        run: pnpm build --filter=./packages/*
+
       - name: Check Types
-        run: pnpm build --filter=./packages/* && pnpm types:check
+        run: pnpm types:check
 
       - name: Run ESLint
         run: pnpm lint

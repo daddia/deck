@@ -11,6 +11,10 @@
     "./vite": "./vite.js",
     "./library": "./library.js"
   },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "reset": "rm -rf dist node_modules .turbo"
+  },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
     "@next/eslint-plugin-next": "^15.3.0",

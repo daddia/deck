@@ -299,7 +299,7 @@ function createPackageJson(projectName: string, options: Options): object {
       ...(options.eslint
         ? {
             eslint: '^8',
-            'eslint-config-next': versionPkg.dependencies.next,
+            '@repo/eslint-config-next': versionPkg.dependencies.next,
           }
         : null),
     },

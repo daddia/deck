@@ -46,7 +46,7 @@
     "@types/mdx": "^2.0.13",
     "@types/node": "22.14.1",
     "@types/react": "^19.1.2",
-    "eslint-config-custom": "workspace:*",
+    "@repo/eslint-config": "workspace:*",
     "fast-glob": "^3.3.3",
     "deck-core": "workspace:*",
     "tsconfig": "workspace:*",

@@ -1,4 +1,4 @@
-import library from 'eslint-config-custom/next.js';
+import library from '@repo/eslint-config/next';
 
 export default [
   {

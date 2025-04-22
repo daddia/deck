@@ -1,4 +1,4 @@
-import library from 'eslint-config-custom/library.js';
+import library from '@repo/eslint-config/library';
 
 export default [
   {

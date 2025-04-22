@@ -229,73 +229,6 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
 
-  examples/react-router:
-    dependencies:
-      '@deck/mdx-remote':
-        specifier: workspace:*
-        version: link:../../packages/mdx-remote
-      '@react-router/node':
-        specifier: ^7.5.1
-        version: 7.5.1(react-router@7.5.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)
-      '@react-router/serve':
-        specifier: ^7.5.1
-        version: 7.5.1(react-router@7.5.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)
-      deck-core:
-        specifier: workspace:*
-        version: link:../../packages/deck-core
-      deck-ui:
-        specifier: workspace:*
-        version: link:../../packages/deck-ui
-      gray-matter:
-        specifier: ^4.0.3
-        version: 4.0.3
-      isbot:
-        specifier: ^5.1.26
-        version: 5.1.26
-      react:
-        specifier: ^19.1.0
-        version: 19.1.0
-      react-dom:
-        specifier: ^19.1.0
-        version: 19.1.0(react@19.1.0)
-      react-router:
-        specifier: ^7.5.1
-        version: 7.5.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      shiki:
-        specifier: ^3.2.2
-        version: 3.2.2
-    devDependencies:
-      '@react-router/dev':
-        specifier: ^7.5.1
-        version: 7.5.1(@react-router/serve@7.5.1(react-router@7.5.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3))(@types/node@22.14.1)(babel-plugin-macros@3.1.0)(jiti@2.4.2)(lightningcss@1.29.3)(react-router@7.5.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.39.0)(tsx@4.19.3)(typescript@5.8.3)(vite@6.3.1(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.3)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.1))(yaml@2.7.1)
-      '@tailwindcss/vite':
-        specifier: ^4.1.4
-        version: 4.1.4(vite@6.3.1(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.3)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.1))
-      '@types/node':
-        specifier: ^22.14.1
-        version: 22.14.1
-      '@types/react':
-        specifier: ^19.1.2
-        version: 19.1.2
-      '@types/react-dom':
-        specifier: ^19.1.2
-        version: 19.1.2(@types/react@19.1.2)
-      react-router-devtools:
-        specifier: ^1.1.10
-        version: 1.1.10(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react-router@7.5.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(vite@6.3.1(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.3)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.1))
-      tailwindcss:
-        specifier: ^4.1.4
-        version: 4.1.4
-      typescript:
-        specifier: ^5.8.3
-        version: 5.8.3
-      vite:
-        specifier: ^6.3.1
-        version: 6.3.1(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.3)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.1)
-      vite-tsconfig-paths:
-        specifier: ^5.1.4
-        version: 5.1.4(typescript@5.8.3)(vite@6.3.1(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.3)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.1))
-
   examples/remote-mdx:
     dependencies:
       '@deck/mdx-remote':
@@ -333,63 +266,47 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
 
-  examples/tanstack-start:
-    dependencies:
-      '@deck/mdx-remote':
-        specifier: workspace:*
-        version: link:../../packages/mdx-remote
-      '@tanstack/react-router':
-        specifier: ^1.116.0
-        version: 1.116.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@tanstack/react-start':
-        specifier: ^1.116.1
-        version: 1.116.1(@netlify/blobs@8.2.0)(@tanstack/react-router@1.116.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(@types/node@22.14.1)(babel-plugin-macros@3.1.0)(db0@0.3.1)(ioredis@5.6.1)(jiti@2.4.2)(lightningcss@1.29.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(terser@5.39.0)(tsx@4.19.3)(vite@6.3.1(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.3)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.1))(webpack@5.99.5(@swc/core@1.11.21(@swc/helpers@0.5.17))(esbuild@0.25.2))(yaml@2.7.1)
-      deck-core:
-        specifier: workspace:*
-        version: link:../../packages/deck-core
-      deck-ui:
-        specifier: workspace:*
-        version: link:../../packages/deck-ui
-      fast-glob:
-        specifier: ^3.3.3
-        version: 3.3.3
-      gray-matter:
-        specifier: ^4.0.3
-        version: 4.0.3
-      react:
-        specifier: ^19.1.0
-        version: 19.1.0
-      react-dom:
-        specifier: ^19.1.0
-        version: 19.1.0(react@19.1.0)
-      vinxi:
-        specifier: ^0.5.4
-        version: 0.5.4(@netlify/blobs@8.2.0)(@types/node@22.14.1)(db0@0.3.1)(ioredis@5.6.1)(jiti@2.4.2)(lightningcss@1.29.3)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.1)
+  packages-internal/eslint-config:
     devDependencies:
-      '@tailwindcss/vite':
-        specifier: ^4.1.4
-        version: 4.1.4(vite@6.3.1(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.3)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.1))
-      '@types/react':
-        specifier: ^19.1.2
-        version: 19.1.2
-      '@types/react-dom':
-        specifier: ^19.1.2
-        version: 19.1.2(@types/react@19.1.2)
-      '@vitejs/plugin-react':
-        specifier: ^4.4.0
-        version: 4.4.0(vite@6.3.1(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.3)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.1))
+      '@eslint/js':
+        specifier: ^9.25.0
+        version: 9.25.1
+      '@next/eslint-plugin-next':
+        specifier: ^15.3.0
+        version: 15.3.1
+      eslint:
+        specifier: ^9.25.0
+        version: 9.25.1(jiti@2.4.2)
+      eslint-config-prettier:
+        specifier: ^10.1.1
+        version: 10.1.2(eslint@9.25.1(jiti@2.4.2))
+      eslint-plugin-only-warn:
+        specifier: ^1.1.0
+        version: 1.1.0
+      eslint-plugin-react:
+        specifier: ^7.37.5
+        version: 7.37.5(eslint@9.25.1(jiti@2.4.2))
+      eslint-plugin-react-hooks:
+        specifier: ^5.2.0
+        version: 5.2.0(eslint@9.25.1(jiti@2.4.2))
+      eslint-plugin-turbo:
+        specifier: ^2.5.0
+        version: 2.5.0(eslint@9.25.1(jiti@2.4.2))(turbo@2.5.0)
+      globals:
+        specifier: ^16.0.0
+        version: 16.0.0
+      typescript:
+        specifier: ^5.8.2
+        version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.30.1
+        version: 8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
+
+  packages-internal/tailwind-config:
+    devDependencies:
       tailwindcss:
         specifier: ^4.1.4
         version: 4.1.4
-      typescript:
-        specifier: ^5.8.3
-        version: 5.8.3
-      vite:
-        specifier: ^6.3.1
-        version: 6.3.1(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.3)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.1)
-      vite-tsconfig-paths:
-        specifier: ^5.1.4
-        version: 5.1.4(typescript@5.8.3)(vite@6.3.1(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.3)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.1))
 
   packages/content-collections:
     devDependencies:
@@ -399,15 +316,15 @@ importers:
       '@content-collections/mdx':
         specifier: ^0.2.2
         version: 0.2.2(@content-collections/core@0.8.2(typescript@5.8.3))(acorn@8.14.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages-internal/eslint-config
       '@types/node':
         specifier: 22.14.1
         version: 22.14.1
       deck-core:
         specifier: workspace:*
         version: link:../deck-core
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../eslint-config-custom
       tsconfig:
         specifier: workspace:*
         version: link:../tsconfig
@@ -430,15 +347,15 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1
     devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages-internal/eslint-config
       '@types/cross-spawn':
         specifier: ^6.0.6
         version: 6.0.6
       '@types/node':
         specifier: 22.14.1
         version: 22.14.1
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../eslint-config-custom
       fast-glob:
         specifier: ^3.3.3
         version: 3.3.3
@@ -560,6 +477,9 @@ importers:
         specifier: ^25.0.1
         version: 25.0.1
     devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages-internal/eslint-config
       '@types/cross-spawn':
         specifier: ^6.0.6
         version: 6.0.6
@@ -569,9 +489,6 @@ importers:
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.2
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../eslint-config-custom
       fast-glob:
         specifier: ^3.3.3
         version: 3.3.3
@@ -645,6 +562,9 @@ importers:
       '@oramacloud/client':
         specifier: ^2.1.4
         version: 2.1.4
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages-internal/eslint-config
       '@tanstack/react-router':
         specifier: ^1.116.0
         version: 1.116.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -672,9 +592,6 @@ importers:
       algoliasearch:
         specifier: 4.24.0
         version: 4.24.0
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../eslint-config-custom
       mdast-util-mdx-jsx:
         specifier: ^3.2.0
         version: 3.2.0
@@ -748,6 +665,9 @@ importers:
       '@deck/mdx-remote':
         specifier: workspace:*
         version: link:../mdx-remote
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages-internal/eslint-config
       '@types/cross-spawn':
         specifier: ^6.0.6
         version: 6.0.6
@@ -763,9 +683,6 @@ importers:
       deck-core:
         specifier: workspace:*
         version: link:../deck-core
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../eslint-config-custom
       mdast-util-mdx-jsx:
         specifier: ^3.2.0
         version: 3.2.0
@@ -851,6 +768,9 @@ importers:
       '@next/eslint-plugin-next':
         specifier: ^15.3.1
         version: 15.3.1
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages-internal/eslint-config
       '@tailwindcss/cli':
         specifier: ^4.1.4
         version: 4.1.4
@@ -863,9 +783,6 @@ importers:
       '@types/react-dom':
         specifier: ^19.1.2
         version: 19.1.2(@types/react@19.1.2)
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../eslint-config-custom
       next:
         specifier: 15.3.1
         version: 15.3.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -903,6 +820,9 @@ importers:
       '@mdx-js/mdx':
         specifier: ^3.1.0
         version: 3.1.0(acorn@8.14.1)
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages-internal/eslint-config
       '@types/estree':
         specifier: ^1.0.7
         version: 1.0.7
@@ -915,9 +835,6 @@ importers:
       '@types/node':
         specifier: 22.14.1
         version: 22.14.1
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../eslint-config-custom
       mdast-util-mdx-jsx:
         specifier: ^3.2.0
         version: 3.2.0
@@ -937,8 +854,6 @@ importers:
         specifier: ^6.0.3
         version: 6.0.3
 
-  packages/eslint-config-custom: {}
-
   packages/mdx-remote:
     dependencies:
       '@mdx-js/mdx':
@@ -954,6 +869,9 @@ importers:
         specifier: ^3.24.3
         version: 3.24.3
     devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages-internal/eslint-config
       '@types/mdx':
         specifier: ^2.0.13
         version: 2.0.13
@@ -966,9 +884,6 @@ importers:
       deck-core:
         specifier: workspace:*
         version: link:../deck-core
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../eslint-config-custom
       fast-glob:
         specifier: ^3.3.3
         version: 3.3.3
@@ -1054,6 +969,9 @@ importers:
         specifier: ^1.6.11
         version: 1.6.11
     devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages-internal/eslint-config
       '@scalar/api-client-react':
         specifier: ^1.2.22
         version: 1.2.22(@hyperjump/browser@1.3.0)(jwt-decode@4.0.0)(react@19.1.0)(tailwindcss@4.1.4)(typescript@5.8.3)
@@ -1069,9 +987,6 @@ importers:
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.2
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../eslint-config-custom
       next:
         specifier: 15.3.1
         version: 15.3.1(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -1117,6 +1032,9 @@ importers:
         specifier: ^0.3.1
         version: 0.3.1(typescript@5.8.3)
     devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages-internal/eslint-config
       '@types/hast':
         specifier: ^3.0.4
         version: 3.0.4
@@ -1132,9 +1050,6 @@ importers:
       deck-ui:
         specifier: workspace:*
         version: link:../deck-ui
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../eslint-config-custom
       shiki:
         specifier: ^3.2.2
         version: 3.2.2
@@ -1175,6 +1090,9 @@ importers:
       '@mdx-js/mdx':
         specifier: ^3.1.0
         version: 3.1.0(acorn@8.14.1)
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages-internal/eslint-config
       '@types/estree':
         specifier: ^1.0.7
         version: 1.0.7
@@ -1199,9 +1117,6 @@ importers:
       deck-ui:
         specifier: workspace:*
         version: link:../deck-ui
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:../eslint-config-custom
       tsconfig:
         specifier: workspace:*
         version: link:../tsconfig
@@ -2247,6 +2162,10 @@ packages:
 
   '@eslint/js@9.24.0':
     resolution: {integrity: sha512-uIY/y3z0uvOGX8cp1C2fiC4+ZmBhp6yZWkojtHL1YEMnRt1Y63HB9TM17proGEmeG7HeUY+UP36F0aknKYTpYA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@eslint/js@9.25.1':
+    resolution: {integrity: sha512-dEIwmjntEx8u3Uvv+kr3PDeeArL8Hw07H9kyYxCjnM9pBjfEhk6uLXSchxxzgiwtRhhzVzqmUSDFBOi1TuZ7qg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/object-schema@2.1.6':
@@ -5205,6 +5124,10 @@ packages:
     resolution: {integrity: sha512-1gxPBJpI/pcjQhKgIU91II6Wkay+dLcN3M6rf2uwP8hRur3HtQXjVrdAK3sjC0piaEuxzMwjXChcETiJl47lAQ==}
     engines: {node: '>=18'}
 
+  dotenv@16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
+
   dotenv@16.5.0:
     resolution: {integrity: sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg==}
     engines: {node: '>=12'}
@@ -5359,6 +5282,16 @@ packages:
     engines: {node: '>=6.0'}
     hasBin: true
 
+  eslint-config-prettier@10.1.2:
+    resolution: {integrity: sha512-Epgp/EofAUeEpIdZkW60MHKvPyru1ruQJxPL+WIycnaPApuseK0Zpkrh/FwL9oIpQvIhJwV7ptOy0DWUjTlCiA==}
+    hasBin: true
+    peerDependencies:
+      eslint: '>=7.0.0'
+
+  eslint-plugin-only-warn@1.1.0:
+    resolution: {integrity: sha512-2tktqUAT+Q3hCAU0iSf4xAN1k9zOpjK5WO8104mB0rT/dGhOa09582HN5HlbxNbPRZ0THV7nLGvzugcNOSjzfA==}
+    engines: {node: '>=6'}
+
   eslint-plugin-react-hooks@5.2.0:
     resolution: {integrity: sha512-+f15FfK64YQwZdJNELETdn5ibXEUQmW1DZL6KXhNnc2heoy/sg9VJJeT7n8TlMWouzWqSWavFkIhHyIbIAEapg==}
     engines: {node: '>=10'}
@@ -5376,6 +5309,12 @@ packages:
     engines: {node: '>=18.12.0'}
     peerDependencies:
       tailwindcss: ^3.4.0
+
+  eslint-plugin-turbo@2.5.0:
+    resolution: {integrity: sha512-qQk54MrUZv0gnpxV23sccTc+FL3UJ8q7vG7HmXuS2RP8gdjWDwI1CCJTJD8EdRIDjsMxF0xi0AKcMY0CwIlXVg==}
+    peerDependencies:
+      eslint: '>6.6.0'
+      turbo: '>2.0.0'
 
   eslint-scope@5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
@@ -5395,6 +5334,16 @@ packages:
 
   eslint@9.24.0:
     resolution: {integrity: sha512-eh/jxIEJyZrvbWRe4XuVclLPDYSYYYgLy5zXGGxD6j8zjSAxFEzI2fL/8xNq6O2yKqVt+eF2YhV+hxjV6UKXwQ==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    hasBin: true
+    peerDependencies:
+      jiti: '*'
+    peerDependenciesMeta:
+      jiti:
+        optional: true
+
+  eslint@9.25.1:
+    resolution: {integrity: sha512-E6Mtz9oGQWDCpV12319d59n4tx9zOTXSTmc8BLVxBx+G/0RdM5MvEEJLU9c0+aleoePYYgVTOsRblx433qmhWQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     hasBin: true
     peerDependencies:
@@ -5827,6 +5776,10 @@ packages:
 
   globals@14.0.0:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
+    engines: {node: '>=18'}
+
+  globals@16.0.0:
+    resolution: {integrity: sha512-iInW14XItCXET01CQFqudPOWP2jYMl7T+QRQT+UNcR/iQncN/F0UNpgd76iFkBPgNQb4+X3LV9tLJYzwh+Gl3A==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -10295,6 +10248,11 @@ snapshots:
       eslint: 9.24.0(jiti@2.4.2)
       eslint-visitor-keys: 3.4.3
 
+  '@eslint-community/eslint-utils@4.6.1(eslint@9.25.1(jiti@2.4.2))':
+    dependencies:
+      eslint: 9.25.1(jiti@2.4.2)
+      eslint-visitor-keys: 3.4.3
+
   '@eslint-community/regexpp@4.12.1': {}
 
   '@eslint/config-array@0.20.0':
@@ -10330,6 +10288,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@9.24.0': {}
+
+  '@eslint/js@9.25.1': {}
 
   '@eslint/object-schema@2.1.6': {}
 
@@ -12729,6 +12689,23 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@typescript-eslint/eslint-plugin@8.30.1(@typescript-eslint/parser@8.30.1(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)':
+    dependencies:
+      '@eslint-community/regexpp': 4.12.1
+      '@typescript-eslint/parser': 8.30.1(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)
+      '@typescript-eslint/scope-manager': 8.30.1
+      '@typescript-eslint/type-utils': 8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
+      '@typescript-eslint/utils': 8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
+      '@typescript-eslint/visitor-keys': 8.30.1
+      eslint: 9.25.1(jiti@2.4.2)
+      graphemer: 1.4.0
+      ignore: 5.3.2
+      natural-compare: 1.4.0
+      ts-api-utils: 2.1.0(typescript@5.8.3)
+      typescript: 5.8.3
+    transitivePeerDependencies:
+      - supports-color
+
   '@typescript-eslint/parser@8.30.1(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.30.1
@@ -12737,6 +12714,18 @@ snapshots:
       '@typescript-eslint/visitor-keys': 8.30.1
       debug: 4.4.0
       eslint: 9.24.0(jiti@2.4.2)
+      typescript: 5.8.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@typescript-eslint/parser@8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)':
+    dependencies:
+      '@typescript-eslint/scope-manager': 8.30.1
+      '@typescript-eslint/types': 8.30.1
+      '@typescript-eslint/typescript-estree': 8.30.1(typescript@5.8.3)
+      '@typescript-eslint/visitor-keys': 8.30.1
+      debug: 4.4.0
+      eslint: 9.25.1(jiti@2.4.2)
       typescript: 5.8.3
     transitivePeerDependencies:
       - supports-color
@@ -12752,6 +12741,17 @@ snapshots:
       '@typescript-eslint/utils': 8.30.1(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)
       debug: 4.4.0
       eslint: 9.24.0(jiti@2.4.2)
+      ts-api-utils: 2.1.0(typescript@5.8.3)
+      typescript: 5.8.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@typescript-eslint/type-utils@8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)':
+    dependencies:
+      '@typescript-eslint/typescript-estree': 8.30.1(typescript@5.8.3)
+      '@typescript-eslint/utils': 8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
+      debug: 4.4.0
+      eslint: 9.25.1(jiti@2.4.2)
       ts-api-utils: 2.1.0(typescript@5.8.3)
       typescript: 5.8.3
     transitivePeerDependencies:
@@ -12796,6 +12796,17 @@ snapshots:
       '@typescript-eslint/types': 8.30.1
       '@typescript-eslint/typescript-estree': 8.30.1(typescript@5.8.3)
       eslint: 9.24.0(jiti@2.4.2)
+      typescript: 5.8.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@typescript-eslint/utils@8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)':
+    dependencies:
+      '@eslint-community/eslint-utils': 4.6.1(eslint@9.25.1(jiti@2.4.2))
+      '@typescript-eslint/scope-manager': 8.30.1
+      '@typescript-eslint/types': 8.30.1
+      '@typescript-eslint/typescript-estree': 8.30.1(typescript@5.8.3)
+      eslint: 9.25.1(jiti@2.4.2)
       typescript: 5.8.3
     transitivePeerDependencies:
       - supports-color
@@ -14027,6 +14038,8 @@ snapshots:
     dependencies:
       type-fest: 4.40.0
 
+  dotenv@16.0.3: {}
+
   dotenv@16.5.0: {}
 
   dunder-proto@1.0.1:
@@ -14326,9 +14339,19 @@ snapshots:
     optionalDependencies:
       source-map: 0.6.1
 
+  eslint-config-prettier@10.1.2(eslint@9.25.1(jiti@2.4.2)):
+    dependencies:
+      eslint: 9.25.1(jiti@2.4.2)
+
+  eslint-plugin-only-warn@1.1.0: {}
+
   eslint-plugin-react-hooks@5.2.0(eslint@9.24.0(jiti@2.4.2)):
     dependencies:
       eslint: 9.24.0(jiti@2.4.2)
+
+  eslint-plugin-react-hooks@5.2.0(eslint@9.25.1(jiti@2.4.2)):
+    dependencies:
+      eslint: 9.25.1(jiti@2.4.2)
 
   eslint-plugin-react@7.37.5(eslint@9.24.0(jiti@2.4.2)):
     dependencies:
@@ -14352,11 +14375,39 @@ snapshots:
       string.prototype.matchall: 4.0.12
       string.prototype.repeat: 1.0.0
 
+  eslint-plugin-react@7.37.5(eslint@9.25.1(jiti@2.4.2)):
+    dependencies:
+      array-includes: 3.1.8
+      array.prototype.findlast: 1.2.5
+      array.prototype.flatmap: 1.3.3
+      array.prototype.tosorted: 1.1.4
+      doctrine: 2.1.0
+      es-iterator-helpers: 1.2.1
+      eslint: 9.25.1(jiti@2.4.2)
+      estraverse: 5.3.0
+      hasown: 2.0.2
+      jsx-ast-utils: 3.3.5
+      minimatch: 3.1.2
+      object.entries: 1.1.9
+      object.fromentries: 2.0.8
+      object.values: 1.2.1
+      prop-types: 15.8.1
+      resolve: 2.0.0-next.5
+      semver: 6.3.1
+      string.prototype.matchall: 4.0.12
+      string.prototype.repeat: 1.0.0
+
   eslint-plugin-tailwindcss@3.18.0(tailwindcss@4.1.4):
     dependencies:
       fast-glob: 3.3.3
       postcss: 8.5.3
       tailwindcss: 4.1.4
+
+  eslint-plugin-turbo@2.5.0(eslint@9.25.1(jiti@2.4.2))(turbo@2.5.0):
+    dependencies:
+      dotenv: 16.0.3
+      eslint: 9.25.1(jiti@2.4.2)
+      turbo: 2.5.0
 
   eslint-scope@5.1.1:
     dependencies:
@@ -14381,6 +14432,48 @@ snapshots:
       '@eslint/core': 0.12.0
       '@eslint/eslintrc': 3.3.1
       '@eslint/js': 9.24.0
+      '@eslint/plugin-kit': 0.2.8
+      '@humanfs/node': 0.16.6
+      '@humanwhocodes/module-importer': 1.0.1
+      '@humanwhocodes/retry': 0.4.2
+      '@types/estree': 1.0.7
+      '@types/json-schema': 7.0.15
+      ajv: 6.12.6
+      chalk: 4.1.2
+      cross-spawn: 7.0.6
+      debug: 4.4.0
+      escape-string-regexp: 4.0.0
+      eslint-scope: 8.3.0
+      eslint-visitor-keys: 4.2.0
+      espree: 10.3.0
+      esquery: 1.6.0
+      esutils: 2.0.3
+      fast-deep-equal: 3.1.3
+      file-entry-cache: 8.0.0
+      find-up: 5.0.0
+      glob-parent: 6.0.2
+      ignore: 5.3.2
+      imurmurhash: 0.1.4
+      is-glob: 4.0.3
+      json-stable-stringify-without-jsonify: 1.0.1
+      lodash.merge: 4.6.2
+      minimatch: 3.1.2
+      natural-compare: 1.4.0
+      optionator: 0.9.4
+    optionalDependencies:
+      jiti: 2.4.2
+    transitivePeerDependencies:
+      - supports-color
+
+  eslint@9.25.1(jiti@2.4.2):
+    dependencies:
+      '@eslint-community/eslint-utils': 4.6.1(eslint@9.25.1(jiti@2.4.2))
+      '@eslint-community/regexpp': 4.12.1
+      '@eslint/config-array': 0.20.0
+      '@eslint/config-helpers': 0.2.1
+      '@eslint/core': 0.13.0
+      '@eslint/eslintrc': 3.3.1
+      '@eslint/js': 9.25.1
       '@eslint/plugin-kit': 0.2.8
       '@humanfs/node': 0.16.6
       '@humanwhocodes/module-importer': 1.0.1
@@ -14912,6 +15005,8 @@ snapshots:
   globals@11.12.0: {}
 
   globals@14.0.0: {}
+
+  globals@16.0.0: {}
 
   globalthis@1.0.4:
     dependencies:
@@ -18359,6 +18454,16 @@ snapshots:
       '@typescript-eslint/parser': 8.30.1(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)
       '@typescript-eslint/utils': 8.30.1(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)
       eslint: 9.24.0(jiti@2.4.2)
+      typescript: 5.8.3
+    transitivePeerDependencies:
+      - supports-color
+
+  typescript-eslint@8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3):
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 8.30.1(@typescript-eslint/parser@8.30.1(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
+      '@typescript-eslint/parser': 8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
+      '@typescript-eslint/utils': 8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3)
+      eslint: 9.25.1(jiti@2.4.2)
       typescript: 5.8.3
     transitivePeerDependencies:
       - supports-color
