@@ -1,4 +1,4 @@
-# @fuma-docs/openapi
+# @deck-openapi
 
 ## 0.1.0
 

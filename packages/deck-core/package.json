@@ -1,9 +1,6 @@
 {
   "name": "deck-core",
   "version": "0.1.0",
-  "license": "MIT",
-  "author": "daddia",
-  "type": "module",
   "description": "deck is a powerful presentation framework built with Next.js and MDX",
   "keywords": [
     "deck",
@@ -12,6 +9,9 @@
     "slideshow",
     "NextJs"
   ],
+  "author": "daddia",
+  "license": "MIT",
+  "type": "module",
   "repository": "github:daddia/deck",
   "bugs": "github:daddia/deck/issues",
   "homepage": "https://deck.daddia.com",

@@ -9,21 +9,18 @@
     ### Little Tip
 
     content
-
   </div>
 
   <div className="fd-step">
     ## Second
 
     content
-
   </div>
 
   <div className="fd-step">
     ## Third
 
     content
-
   </div>
 </div>
 
@@ -36,13 +33,11 @@ content
     # Big: First
 
     content
-
   </div>
 
   <div className="fd-step">
     # Big: Second
 
     content
-
   </div>
 </div>

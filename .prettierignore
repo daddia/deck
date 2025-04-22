@@ -2,24 +2,30 @@ packages/create-app/versions.json
 
 apps/docs/shaders/*
 
-**/test/out/**/*
-**/test/fixtures/*.output.*
-
-.content-collections
-
+# Documentation Site
+apps/docs/content/docs/ui/typescript.mdx
 apps/docs/content/docs/ui/museum/*.mdx
 !apps/docs/content/docs/ui/museum/index.mdx
 
 examples/openapi/content/docs/(api)/**/*.mdx
 !examples/openapi/content/docs/(api)/index.mdx
 
-apps/docs/content/docs/ui/typescript.mdx
-
+# Content collections
+.content-collections
 .content-collections/**/*
 
 packages/mdx-remote/test/fixtures/**/*.js
 packages/mdx-remote/test/fixtures/**/*.json
 
+# Test files
+**/test/out/**/*
+**/test/fixtures/*.output.*
+**/test/fixtures/*.js
+**/test/fixtures/*.json
+**/__tests__/out/**/*
+**/__tests__/fixtures/*.output.*
+**/__tests__/fixtures/*.js
+**/__tests__/fixtures/*.json
 
 # Build output
 dist/
