@@ -1,10 +1,14 @@
 name: Lint
 
 on:
+  push:
+    branches: [main]
   pull_request:
-    branches:
-      - main
-  workflow_dispatch:
+    paths:
+      - .github/workflows/lint.yml
+      - "**/*.{yml,yaml,md,mdx,js,jsx,ts,tsx,json,toml,css}"
+      - pnpm-lock.yaml
+      - package.json
 
 jobs:
   lint:
