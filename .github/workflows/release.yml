@@ -19,17 +19,19 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.DECK_GH_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-            version: 10.9.0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -58,8 +60,8 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm run release
           version: pnpm run version
+          publish: pnpm run release
         env:
-          GITHUB_TOKEN: ${{ secrets.DECK_GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.DECK_NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

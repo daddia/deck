@@ -19,16 +19,17 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "build:release": "turbo run build --filter=./packages/*",
     "dev": "turbo run dev",
     "dev:all": "turbo run dev --filter=!./examples/*",
     "dev:examples": "turbo run dev --filter=./examples/*",
     "lint": "turbo run lint",
     "lint:prettier": "prettier --cache --check --ignore-path .gitignore --ignore-path .prettierignore .",
     "prettier": "prettier --cache --write --list-different --ignore-path .gitignore --ignore-path .prettierignore .",
-    "release": "turbo run build --filter=./packages/* && changeset publish && pnpm -r run postpublish",
     "test": "vitest",
     "types:check": "turbo run types:check",
     "version": "changeset version && pnpm install --lockfile-only",
+    "release": "turbo run build --filter=./packages/* && changeset publish && pnpm -r run postpublish",
     "clean": "turbo run clean",
     "reset": "turbo run reset && rm -rf dist node_modules .turbo"
   },
