@@ -82,8 +82,8 @@
     "webpack": "^5.99.5"
   },
   "peerDependencies": {
-    "@deck/mdx-remote": "^1.2.0",
-    "deck-core": "^14.0.0 || ^15.0.0",
+    "@deck/mdx-remote": "^0.1.0",
+    "deck-core": "^0.1.0",
     "next": "^15.3.0"
   },
   "peerDependenciesMeta": {

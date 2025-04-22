@@ -5,9 +5,9 @@
   "fixed": [["deck-core", "deck-ui", "create-deck-app"]],
   "linked": [],
   "access": "restricted",
-  "baseBranch": "dev",
+  "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "privatePackages": { "version": false },
   "bumpVersionsWithWorkspaceProtocolOnly": true,
-  "ignore": ["docs", "example-*"]
+  "ignore": ["example-*"]
 }

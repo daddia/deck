@@ -1,7 +1,10 @@
 {
   "name": "deck-core",
   "version": "0.1.0",
-  "description": "The library for building a presentation framework in Next.js and MDX",
+  "license": "MIT",
+  "author": "daddia",
+  "type": "module",
+  "description": "deck is a powerful presentation framework built with Next.js and MDX",
   "keywords": [
     "deck",
     "presentation",
@@ -9,11 +12,9 @@
     "slideshow",
     "NextJs"
   ],
-  "homepage": "https://deck.daddia.com",
   "repository": "github:daddia/deck",
-  "license": "MIT",
-  "author": "daddia",
-  "type": "module",
+  "bugs": "github:daddia/deck/issues",
+  "homepage": "https://deck.daddia.com",
   "exports": {
     "./sidebar": {
       "import": "./dist/sidebar.js",
@@ -118,13 +119,13 @@
     "@types/react-dom": "^19.1.2",
     "algoliasearch": "4.24.0",
     "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "mdast-util-mdx-jsx": "^3.2.0",
     "mdast-util-mdxjs-esm": "^2.0.1",
     "next": "^15.3.1",
     "react-router": "^7.5.1",
     "remark-mdx": "^3.1.0",
     "remark-rehype": "^11.1.2",
-    "@repo/typescript-config": "workspace:*",
     "typescript": "^5.8.3",
     "unified": "^11.0.5",
     "vfile": "^6.0.3"
