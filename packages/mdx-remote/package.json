@@ -47,14 +47,14 @@
     "@types/node": "22.14.1",
     "@types/react": "^19.1.2",
     "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "fast-glob": "^3.3.3",
     "deck-core": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
     "unified": "^11.0.5",
     "vfile": "^6.0.3"
   },
   "peerDependencies": {
-    "deck-core": "^14.0.0 || ^15.0.0",
+    "deck-core": "^0.1.0",
     "react": "18.x.x || 19.x.x"
   },
   "publishConfig": {

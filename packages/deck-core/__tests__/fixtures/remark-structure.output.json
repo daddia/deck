@@ -2,41 +2,41 @@
   "contents": [
     {
       "content": "Some text here",
-      "heading": "heading-1",
+      "heading": "heading-1"
     },
     {
       "content": "Some text here",
-      "heading": "heading-2",
+      "heading": "heading-2"
     },
     {
       "content": "Name",
-      "heading": "heading-3",
+      "heading": "heading-3"
     },
     {
       "content": "Description",
-      "heading": "heading-3",
+      "heading": "heading-3"
     },
     {
       "content": "Hello World",
-      "heading": "heading-3",
+      "heading": "heading-3"
     },
     {
       "content": "Goodbye",
-      "heading": "heading-3",
-    },
+      "heading": "heading-3"
+    }
   ],
   "headings": [
     {
       "content": "Heading 1",
-      "id": "heading-1",
+      "id": "heading-1"
     },
     {
       "content": "Heading 2",
-      "id": "heading-2",
+      "id": "heading-2"
     },
     {
       "content": "Heading 3",
-      "id": "heading-3",
-    },
-  ],
+      "id": "heading-3"
+    }
+  ]
 }
