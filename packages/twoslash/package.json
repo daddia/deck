@@ -58,7 +58,7 @@
     "@repo/eslint-config": "workspace:*",
     "deck-ui": "workspace:*",
     "shiki": "^3.2.2",
-    "tsconfig": "workspace:*"
+    "@repo/typescript-config": "workspace:*"
   },
   "peerDependencies": {
     "deck-ui": "^15.0.0",

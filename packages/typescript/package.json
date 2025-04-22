@@ -59,7 +59,7 @@
     "@repo/eslint-config": "workspace:*",
     "deck-core": "workspace:*",
     "deck-ui": "workspace:*",
-    "tsconfig": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "typescript": "^5.8.3",
     "unified": "^11.0.5"
   },

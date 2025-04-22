@@ -43,7 +43,7 @@
     "@types/node": "22.14.1",
     "@repo/eslint-config": "workspace:*",
     "deck-core": "workspace:*",
-    "tsconfig": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "unified": "^11.0.5",
     "zod": "^3.24.3"
   },

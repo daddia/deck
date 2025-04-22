@@ -49,7 +49,7 @@
     "@repo/eslint-config": "workspace:*",
     "fast-glob": "^3.3.3",
     "deck-core": "workspace:*",
-    "tsconfig": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "unified": "^11.0.5",
     "vfile": "^6.0.3"
   },

@@ -112,7 +112,7 @@
     "next": "15.3.1",
     "tailwindcss": "^4.1.4",
     "tsc-alias": "^1.8.15",
-    "tsconfig": "workspace:*"
+    "@repo/typescript-config": "workspace:*"
   },
   "peerDependencies": {
     "next": "14.x.x || 15.x.x",

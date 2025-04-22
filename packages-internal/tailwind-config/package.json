@@ -4,13 +4,10 @@
   "private": true,
   "exports": {
     "./tailwind.config": "./tailwind.config.ts",
-    "./postcss.config": "./postcss.config.js"
-  },
-  "scripts": {
-    "clean": "rm -rf dist",
-    "reset": "rm -rf dist node_modules .turbo"
+    "./postcss.config": "./postcss.config.ts"
   },
   "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
     "tailwindcss": "^4.1.4"
   }
 }

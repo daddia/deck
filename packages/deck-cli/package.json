@@ -50,7 +50,7 @@
     "@types/react": "^19.1.2",
     "@repo/eslint-config": "workspace:*",
     "fast-glob": "^3.3.3",
-    "tsconfig": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "tsx": "^4.19.3"
   },
   "publishConfig": {
