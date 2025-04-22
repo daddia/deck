@@ -72,7 +72,11 @@ for (const { name, collection } of cases) {
       'hash',
     );
 
-    await expect(out.replaceAll(process.cwd(), '$cwd')).toMatchFileSnapshot(
+    await expect(
+      out
+        .replaceAll(process.cwd(), '$cwd')
+        .replaceAll(/\\/g, '/') // Add this line to normalize Windows paths
+    ).toMatchFileSnapshot(
       `./fixtures/index-${name}.output.js`,
     );
   });
