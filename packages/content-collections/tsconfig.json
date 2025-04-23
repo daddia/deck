@@ -1,9 +1,0 @@
-{
-  "extends": "@repo/typescript-config/base",
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  },
-  "exclude": ["node_modules", "dist", "eslint.config.mjs"]
-}

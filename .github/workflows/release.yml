@@ -7,7 +7,6 @@ on:
     paths:
       - '.changeset/**'
       - 'packages/**'
-      - 'packages-internal/**'
       - 'apps/**'
   workflow_dispatch:
 

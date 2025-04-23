@@ -1,7 +1,5 @@
 packages/create-app/versions.json
 
-apps/docs/shaders/*
-
 # Documentation Site
 apps/docs/content/docs/ui/typescript.mdx
 apps/docs/content/docs/ui/museum/*.mdx
@@ -10,9 +8,6 @@ apps/docs/content/docs/ui/museum/*.mdx
 examples/openapi/content/docs/(api)/**/*.mdx
 !examples/openapi/content/docs/(api)/index.mdx
 
-# Content collections
-.content-collections
-.content-collections/**/*
 
 packages/mdx-remote/test/fixtures/**/*.js
 packages/mdx-remote/test/fixtures/**/*.json
