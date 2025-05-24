@@ -109,7 +109,7 @@
     "@types/react-dom": "^19.1.2",
     "@repo/eslint-config": "workspace:*",
     "deck-core": "workspace:*",
-    "next": "15.3.1",
+    "next": "15.3.2",
     "tailwindcss": "^4.1.4",
     "tsc-alias": "^1.8.15",
     "@repo/typescript-config": "workspace:*"
