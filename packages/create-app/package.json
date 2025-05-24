@@ -31,7 +31,7 @@
     "reset": "rm -rf dist node_modules .turbo"
   },
   "dependencies": {
-    "@clack/prompts": "^0.10.1",
+    "@clack/prompts": "^0.11.0",
     "cross-spawn": "^7.0.6",
     "picocolors": "^1.1.1"
   },
